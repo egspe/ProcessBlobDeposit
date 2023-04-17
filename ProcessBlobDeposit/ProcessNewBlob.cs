@@ -12,7 +12,7 @@ namespace ProcessBlobDeposit
         [FunctionName("ProcessNewBlob")]
         public void Run([BlobTrigger("samples-workitems/{name}", Connection = "BlobContainerConnectionString")] Stream inboundBlob, string name, ILogger log)
         {
-            log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {inboundBlob.Length} Bytes");
+            log.LogInformation($"C# Blob trigger function Processed blob\n Name:{name} \n Size: {inboundBlob.Length} Bytes.");
         }
     }
 }
