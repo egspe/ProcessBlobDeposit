@@ -2,7 +2,7 @@ name: Build and deploy .NET Core application to Function App processblobdeposit
 on:
   push:
     branches:
-    - main
+    - xmain
 env:
   AZURE_FUNCTIONAPP_NAME: processblobdeposit
   AZURE_FUNCTIONAPP_PACKAGE_PATH: ProcessBlobDeposit\published
